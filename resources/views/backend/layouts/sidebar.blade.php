@@ -22,10 +22,10 @@
             </a>
             <ul class="collapse navigation-submenu" id="banner">
 				<li>
-					<a href="pages/sample-pages/login_1.html" target="_blank">All Departments</a>
+					<a href="{{route('banner.index')}}">All Banners</a>
 				</li>
 				<li>
-					<a href="pages/sample-pages/error_2.html" target="_blank">Add Departments</a>
+					<a href="{{route('banner.create')}}">Add Banner</a>
 				</li>
             </ul>
         </li>

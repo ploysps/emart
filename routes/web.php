@@ -21,8 +21,13 @@ Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
+//Admin dashboard
+
+//backend
 Route::group(['prefix'=>'admin','middleware'=>'auth'],
     function(){
     Route::get('/',[App\Http\Controllers\AdminController::class,'admin'])->name('admin');
-
+    
+    // Banner
+    Route::resource('banner','BannerController');
 });
